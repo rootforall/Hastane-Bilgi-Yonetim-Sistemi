@@ -24,12 +24,6 @@ Eczane & Stok: Hastane ana deposu ve eczane için stok/maliyet takibi.
 
 Personel & Döner Sermaye: İnsan kaynakları ve doktor performans (döner sermaye) hesaplamaları.
 
-🛠 Sistem Gereksinimleri
-
-Java Development Kit (JDK): Sürüm 8 veya üzeri.
-
-Veritabanı Sürücüsü: sqlite-jdbc.jar (SQLite ile bağlantı kurmak için gereklidir).
-
 💾 Veritabanı Yapısı
 
 Uygulama ilk kez çalıştırıldığında, bulunduğu dizine otomatik olarak hastane.db adında bir SQLite veritabanı dosyası oluşturur. Aşağıdaki tablolar otomatik olarak kurulur:
@@ -41,33 +35,6 @@ Muayeneler (HastaTC, Poliklinik, Doktor, Şikayet, Teşhis, Tarih)
 Cari (HastaTC, İşlem Tipi, Tutar, Tarih)
 
 Stok (Malzeme, Miktar, Birim, Fiyat)
-
-⚙️ Kurulum ve Çalıştırma
-
-Projenin derlenmesi ve çalıştırılması için aşağıdaki adımları izleyin:
-
-Projeyi İndirin: HastaneOtomasyonu.java dosyasını bilgisayarınıza kaydedin.
-
-JDBC Sürücüsünü İndirin: İnternetten en güncel sqlite-jdbc.jar dosyasını indirin ve Java dosyası ile aynı klasöre koyun.
-
-Derleme: Komut satırını (Terminal / CMD) açın ve aşağıdaki komutla projeyi derleyin:
-
-javac HastaneOtomasyonu.java
-
-
-Çalıştırma: Kütüphaneyi (classpath) belirterek uygulamayı çalıştırın:
-
-Windows için:
-
-java -cp ".;sqlite-jdbc-X.X.X.jar" HastaneOtomasyonu
-
-
-Mac/Linux için:
-
-java -cp ".:sqlite-jdbc-X.X.X.jar" HastaneOtomasyonu
-
-
-(Not: X.X.X kısmını indirdiğiniz jar dosyasının sürüm numarası ile değiştirin.)
 
 📝 Notlar
 
